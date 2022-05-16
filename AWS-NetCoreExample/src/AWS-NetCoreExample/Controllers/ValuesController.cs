@@ -9,7 +9,7 @@ public class ValuesController : ControllerBase
     [HttpGet]
     public IEnumerable<string> Get()
     {
-        return new string[] { "value1", "value2" };
+        return new string[] { "value1", "value2", "new value to test deployment" };
     }
 
     // GET api/values/5

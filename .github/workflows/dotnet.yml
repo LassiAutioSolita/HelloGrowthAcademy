@@ -21,4 +21,4 @@ jobs:
       run: |
         cd AWS-NetCoreExample/src/AWS-NetCoreExample
         dotnet lambda package
-        dotnet lambda deploy-function AWS-NetCoreExample --region eu-north-1 -frun dotnet6 --aws-access-key-id AKIAZXY2XUD5U4L2OR4V --aws-secret-key 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 --disable-interactive true
+        dotnet lambda deploy-function HelloTestEnv --region eu-north-1 -frun dotnet6 --aws-access-key-id AKIAZXY2XUD5U4L2OR4V --aws-secret-key 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 --disable-interactive true

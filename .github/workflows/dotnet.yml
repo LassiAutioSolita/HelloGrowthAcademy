@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  deploy-test:
 
     runs-on: ubuntu-latest
     environment: Test
@@ -28,8 +28,8 @@ jobs:
           --aws-secret-key ${{ secrets.AWS_SECRET_KEY }} \
           --disable-interactive true
 
-  prod:
-    needs: build
+  deploy-production:
+
     runs-on: ubuntu-latest
     environment: Production
 

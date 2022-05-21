@@ -63,9 +63,9 @@ jobs:
     - name: Smoke test deployment
       run: |
         response_body=$(curl https://dy6qirohtb.execute-api.eu-north-1.amazonaws.com/production/api/values)
-        if [[ "$response_body" == *"value123"* ]]; then
+        if [[ "$response_body" == *"value99"* ]]; then
           exit 0
         else
-          echo Wrong response. Actual = \'"$response_body"\', expected it to contain \'value123\'.
+          echo Wrong response. Actual = \'"$response_body"\', expected it to contain \'value99\'.
           exit 1
         fi
